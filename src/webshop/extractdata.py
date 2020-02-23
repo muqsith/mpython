@@ -9,7 +9,5 @@ with open(os.path.join(dirname, '../../tmp/out.json'), 'r') as f:
        d = json.loads(line)
        domainName = d["domain"]
        os.system('sudo /usr/lib/one.com-webshopbackend-app/server/bin/webshop-data export ' + domainName + ' > /home/mui/domainsdata/' + domainName + '.json')
-       break
-       
 
 f.close()
